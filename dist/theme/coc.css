@@ -12,14 +12,14 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #dddddd;
+  --background-color: black;
   --main-font: Hack-Regular, Helvetica, sans-serif;
   --main-font-size: 24px;
-  --main-color: #222;
+  --main-color: white;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
   --heading-font: Hack-Regular, Helvetica, sans-serif;
-  --heading-color: #222;
+  --heading-color: white;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
   --heading-text-transform: normal;
@@ -31,29 +31,29 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading3-size: 1.4em;
   --heading4-size: 1.3em;
   --code-font: monospace;
-  --link-color: green;
-  --link-color-hover: #00cd00;
-  --selection-background-color: #01ff01;
-  --selection-color: #fff; }
+  --link-color: darksalmon;
+  --link-color-hover: yellow;
+  --selection-background-color: indigo;
+  --selection-color: white; }
 
 .reveal-viewport {
-  background: #dddddd;
-  background-color: #dddddd; }
+  background: black;
+  background-color: black; }
 
 .reveal {
   font-family: "Hack-Regular", Helvetica, sans-serif;
   font-size: 24px;
   font-weight: normal;
-  color: #222; }
+  color: white; }
 
 .reveal ::selection {
   color: #fff;
-  background: #01ff01;
+  background: #fbece7;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: #01ff01;
+  background: #fbece7;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -71,7 +71,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #222;
+  color: white;
   font-family: "Hack-Regular", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -247,49 +247,49 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * LINKS
  *********************************************/
 .reveal a {
-  color: green;
+  color: darksalmon;
   text-decoration: none;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #00cd00;
+  color: #f4cabc;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #003400; }
+  background: #de6238; }
 
 /*********************************************
  * Frame helper
  *********************************************/
 .reveal .r-frame {
-  border: 4px solid #222;
+  border: 4px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal a .r-frame {
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: green;
+  border-color: darksalmon;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: green; }
+  color: darksalmon; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: green; }
+  color: darksalmon; }
 
 /*********************************************
  * PRINT BACKGROUND
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #dddddd; } }
+    background-color: black; } }

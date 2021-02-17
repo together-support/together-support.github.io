@@ -17,10 +17,10 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #dddddd;
+$backgroundColor: black;
 
-$mainColor: #222;
-$headingColor: #222;
+$mainColor: white;
+$headingColor:white;
 
 $mainFontSize: 24px;
 $mainFont: 'Hack-Regular', Helvetica, sans-serif;
@@ -29,9 +29,9 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: normal;
 $headingFontWeight: 600;
-$linkColor: green;
-$linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: lighten( $linkColor, 25% );
+$linkColor: darksalmon;
+$linkColorHover: yellow;
+$selectionBackgroundColor: indigo;
 
 $heading1Size: 1.7em;
 $heading2Size: 1.6em;
