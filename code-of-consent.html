@@ -32,17 +32,19 @@
 					<ul>
 						<li class="fragment fade-in">We invite you to take your time.</li>
 						<li class="fragment fade-in">We invite you to dig deeper.</li>
+						<br />
 						<li class="fragment fade-in">We welcome your pace.</li>
 						<li class="fragment fade-in">We welcome your concerns.</li>
+						<br />
 						<li class="fragment fade-in">We invite your enthusiasm.</li>
 						<li class="fragment fade-in">We invite your participation.</li>
 					</ul>      
 				</section>
 				<section>
-					<p>We acknowledge the trauma that accompanies surrendering information about ourselves in the digital realm without
-						being given insight into how platforms work, and how they protect or expose us in the process.<sup>1</sup> In constructive
-						resistance against that, we offer this document, intended to give you a clear understanding of the ethos and
-						agreements behind this software and how they affect your privacy.</p>
+					<p>We acknowledge the trauma that accompanies surrendering information about ourselves in the digital realm without being
+					given insight into how platforms work, and how they protect or expose us in the process. In constructive resistance
+					against that, we offer this document, intended to give you a clear understanding of the ethos and agreements behind this
+					software and how they affect your privacy.</p>
 
 					<p><sup>1</sup> See Also: <a href='https://www.bitchmedia.org/article/digital-doulas-fixing-data-trauma\' target='_blank'>Data Trauma</a> by Olivia M. Ross.</p>
 				</section>
@@ -68,17 +70,16 @@
 					</ul>
 				</section>
 				<section>
-					<p>Togethernet is a software in pursuit of intentional and ongoing <em>consentful</em> engagement that prioritizes the
-						digital autonomy and privacy of our users. We do not sell any of our users’ data nor does the software run on
-						advertising. Those who are seeking a digital environment designed with safety in mind are encouraged to use
-						Togethernet.</p>
+					<p>Togethernet is a software in pursuit of intentional and ongoing consentful engagement that prioritizes the digital
+					autonomy and privacy of our users. We do not sell any of our users’ data nor does the software run on advertising. Those
+					who are seeking a digital environment designed with safety in mind are encouraged to use Togethernet.</p>
 				</section>
 				<section>
 					<h3>Access</h3>
-					<p>Togethernet aspires towards accessibility and inclusivity. We acknowledge that the alpha version of the software falls short of
-						that aspiration, as it is not currently fully accessible to the Blind and low-vision community. It
-						is our intention to dedicate future resources towards ensuring that upcoming versions of Togethernet are designed
-						with the needs of this community at the forefront.</p>
+					<p>Togethernet aspires towards accessibility and inclusivity. We acknowledge that the alpha version of the software falls
+					short of that aspiration, as it is not currently fully accessible to the Blind and low-vision community. It is our
+					intention to dedicate future resources towards ensuring that upcoming versions of Togethernet are designed with the
+					needs of this community at the forefront.</p>
 				</section>
 				<section>
 					<h3>Who shouldn’t use this?</h3>
@@ -99,21 +100,17 @@
 					<p>Developers who choose to adapt Togethernet’s open-source code in their projects, licenced under <a href='https://github.com/together-support/togethernet/blob/main/LICENSE.md' target='_blank'>ACSL 1.4</a>,<sup>2</sup> are expected
 					to adhere to the principles of consent outlined and prioritized by this software, and not alter the code in a way that
 					violates these principles of consent.</p>
-					<p>It is imperative that open-source usage of this code aligns with its intended ethos of consent – developers who violate
-					the privacy agreements established in this Code of Consent will be required to disaffiliate from the “Togethernet” name,
-					and remove this Code of Consent document from the code entirely.</p>
+					<p><sup>2</sup> We also ask that a robust politics of citation be adhered to in the adaptation and use of this code and
+						its embedded Code of Consent.</p>
 				</section>
 				<section>
+					<p>It is imperative that open-source usage of this code aligns with its intended ethos of consent – developers who
+						violate the privacy agreements established in this Code of Consent will be required to disaffiliate from the
+						“Togethernet” name, and remove this Code of Consent document from the code entirely.</p>
 					<p>We strongly encourage developers to review the <a
 							href='https://www.andalsotoo.net/wp-content/uploads/2018/10/Building-Consentful-Tech-Zine-SPREADS.pdf'
 							target='_blank'>Consentful Tech Zine</a> prior to altering the code in order to ensure that the software remains
 						true to its foundational principles.</p>
-					<p><sup>2</sup> We also ask that a robust politics of citation be adhered to in the adaptation and use of this code and
-						its embedded Code of Consent.</p>
-					<div class='r-hstack'>
-						<a href=''>Stop</a>
-						<a href=''>Continue</a>
-					</div>
 				</section>
 				<section>
 					<h4>System Requirements</h4>
@@ -125,6 +122,8 @@
 					<h4>Demo</h4>
 					<p>We invite you to <a href='https://togethernet.herokuapp.com/' target='_blank'>visit this link</a> to try out a demo version of the software. In order to test out the
 					collaborative features, we encourage you to invite a friend to join.</p>
+					<p><sup>3</sup> It is possible to increase the number of participants by changing the environment variable inside the source code,
+					however we don’t recommend doing so without first gaining a good familiarity with how the application works.</p>
 				</section>
 				<section>
 					<h2>Software Architecture</h2>
@@ -132,12 +131,12 @@
 				</section>
 				<section>
 					<h3>Peer to Peer Consent: Ephemeral Channel</h3>
-					<p>While using Togethernet, all the text-based communications with your community take place by default under the
-						Ephemeral Channels. Operating under the logic of peer-to-peer consent, the communication records created during the
-						live session in Ephemeral Mode will be permanently deleted once the last participant closes their browser tab. To
-						prevent messages from being deleted, participants need to go through the Consent to Archive process in order to
-						publish the content to the Archival Channel, allowing the users to make <em>informed decisions</em> regarding their own
-						privacy level while using Togethernet.</p>
+					<p>While using Togethernet, all text-based communications with your community take place under the Ephemeral Channels.
+					Operating under the logic of peer-to-peer consent, the communication records created during the live session in
+					Ephemeral Mode will be permanently deleted once the last participant closes their browser tab. To prevent messages from
+					being deleted, participants need to go through the Consent to Archive process in order to publish the content to the
+					Archival Channel, allowing the users to make <em>informed decisions</em> regarding their own privacy level while using
+					Togethernet.</p>
 				</section>
 				<section>
 					<p>In WebRTC, real time communications are achieved without needing to install any additional applications or plug-ins. The
@@ -146,27 +145,28 @@
 					Furthermore, WebRTC encrypts all data that is sent through it in order to protect users’ communications.</p>
 				</section>
 				<section>
-					<p>If the description above feels confusing, we invite you to take a moment to imagine:</p>
+					<p>If you are feeling confused at this point, we invite you to take a moment to imagine:</p>
 					<p>You and a friend are meeting in the street. Your intentions are to share private information with one another, but prior
 					to that happening, you both require exchanging a secret handshake. The information you share is functionally protected
 					by the mediating act of completing the handshake, whose steps are known only by the two of you. This is akin to the
 					level of privacy enabled by WebRTC’s encryption in peer-to-peer mode.</p>
-					<p>Once data has been sent from your computer to your peers’, you have the agency to decide to remove this data by deleting
-					the messages. In the Ephemeral Channel, messages disappear once the last person in a given chat session departs. If you
-					leave a session but return before the last person has departed, your messages will still be visible and accessible to
-					those in the chat.</p>
+					<p>Once your peers receive data sent from your browser, you have the agency to remove this data by deleting the messages.
+					In the Ephemeral Channel, messages disappear once the last person in a given chat session departs. If you leave a
+					session but return before the last person has departed, your messages will still be visible and accessible to those in
+					the chat.</p>
 				</section>
 				<section>
 					<h4>The Role of the Server</h4>
-					<p>While WebRTC is distinguishable in that it enables encrypted peer-to-peer connections via browsers, servers are still
+					<p>While WebRTC is distinctive in that it enables encrypted peer-to-peer connections via browsers, servers are still
 					required in order to facilitate these connections. Think of the server as an impartial mediator.</p>
-					<p>For a connection to be established between you and your peer computer, information must first be transmitted about each
-					of your respective locations. The information that is given pertains to your local IP address (+ more), which happens
-					over Javascript in order to get to what is called the signaling server<sup>4</sup>. Once your computer has established a connection
-					to your peer via the server, the data that has been sent about your location is not reversible.</p>
-					<p>Communication between you and your peer happens via offers and answers that are mediated by this server. These offers,
-					sent by the initiating computer to a recipient, occur once you have consented to begin an exchange on the software at
-					the beginning of every instance in the Ephemeral Channel.</p>
+					<p>For a connection to be established between you and a peer, information on your respective locations must be exchanged
+					over the server. The information that is given pertains to your local IP address, which takes place inside your browser
+					and is executed by Javascript and being sent out to what is called the signaling server.<sup>4</sup> Once location data has been
+					sent to the signaling server, it is not retrievable.</p>
+					<p>Communication between you and your peer happens via offers and answers that are mediated by this signaling server. These
+					offers, sent by the initiating browser to a receiving browser, occur once you have consented to begin an exchange on the
+					software at the start of the software.</p>
+					<p><sup>4</sup> To learn more about the role of the signaling server, we invite you to visit <a href='https://webrtc.org/getting-started/peer-connections' target='_blank'>WebRTC.org</a>.</p>
 				</section>
 				<section>
 					<h3>Peer to Server: Archival Channel</h3>
@@ -178,12 +178,15 @@
 					<p>The editor is armed with the ability to delete a message without necessarily having collective consent; as such, this
 					role is one that requires an abundance of care and trust by peer users. It is encouraged that users communicate with
 					their peers prior to removing messages from the archive. When messages are deleted, a trace is left in the archive that
-					labels the removed message as having been deleted.</p>
+					labels the removed message as having been deleted by the user.</p>
+					<p><sup>5</sup> There can only be one editor at a time in the Archival Channel, and since users maintain default anonymity even in this
+					mode, participants are encouraged to label themselves with a recognizable name (though this does not necessarily need to
+					be a formal or ‘real’ name).</p>
 				</section>
 				<section>
-					<p>The Archival Channel’s default database runs on <a href='https://www.postgresql.org/' target='_blank'>PostGres</a>, an open source database that users can run on their own, or a
-					third-party server. Messages in the Archival Channel can be downloaded into an HTML page, which gives users the ability
-					to host the archive of their conversation on their own website if desired.</p>
+					<p>The Archival Channel’s default database runs on <a href='https://www.postgresql.org/' target='_blank'>PostGres</a>, an open source database that users can run on their own, or a third-party server. Messages in the Archival Channel can
+					be downloaded into an HTML page, which gives users the ability to host the archive of their conversation on their own
+					website if desired.</p>
 					<p>It is important to note that data stored on third-party servers might not necessarily adhere to the same consent
 					principles that are outlined in this document. A list of third-party servers and their consent adherence can be found
 					<a href='https://en.gendersec.train.tacticaltech.org/downloads/en/autonomous_and_ethical_hosting_providers.pdf' target='_blank'>here</a>.</p>
@@ -195,13 +198,13 @@
 						target='_blank'>Consentful Tech Zine</a>.</p>
 				</section>
 				<section>
-					<h5>Are people <b>Freely</b> giving us their consent to access and store parts of their digital bodies?</h5>
+					<p>Are people <b>Freely</b> giving us their consent to access and store parts of their digital bodies?</p>
 					<p>Yes - this document is intended to arm prospective Togethernet users with an understanding of how their digital bodies
 					are accessed, stored, and protected while using the software. Prospective users are invited to reach out with any
 					questions or concerns in case they are not comfortable with the terms outlined here.</p>
 				</section>
 				<section>
-					<h5>Does our system allow for <b>Reversible</b> consent? How easy is it for people to withdraw both their consent and their data?</h5>
+					<p>Does our system allow for <b>Reversible</b> consent? How easy is it for people to withdraw both their consent and their data?</p>
 					<p>Yes - in order for messages to be archived, collective consent from all parties in the conversation is required. This
 					consent can be revoked at any time by any individual in the conversation. Revoking consent removes users’ data from the
 					archive, but does not preclude users from continuing to use the software.</p>
@@ -215,8 +218,8 @@
 							target='_blank'>Signal</a>.</p>
 				</section>
 				<section>
-					<h5>How are we fully and clearly <b>Informing</b> people about what they’re consenting to? Is important information about the risks
-					a user might be exposed to buried in the fine print of the terms & conditions?</h5>
+					<p>How are we fully and clearly <b>Informing</b> people about what they’re consenting to? Is important information about the risks
+					a user might be exposed to buried in the fine print of the terms & conditions?</p>
 					<p>Through making use of repetition and robust citation, the information in this document is intended to be clear and
 					consistent. Our intention is to be transparent in the potential risks involved with use.</p>
 					<p>This Code of Consent is embedded as part of Togethernet’s Open Source software. As such, it is possible that this
@@ -224,8 +227,8 @@
 					developers must take out the code of consent document from the software and disaffiliate from the Togethernet name.</p>
 				</section>
 				<section>
-					<h5>Can people consent to <b>Specific</b> things in this system and not others? Can people select which aspects of their digital
-					bodies they want to have exposed and have stored?</h5>
+					<p>Can people consent to <b>Specific</b> things in this system and not others? Can people select which aspects of their digital
+					bodies they want to have exposed and have stored?</p>
 					<p>Yes - this is accomplished via the consent to archive function, which requests the consent of all participants prior to
 					moving messages into the centralized database or third-party server. Consent to archive must be unanimous - if one
 					participant in the group revokes their consent, the message is removed from the Archival Channel for all parties.</p>
