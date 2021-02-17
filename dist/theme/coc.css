@@ -14,7 +14,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 :root {
   --background-color: black;
   --main-font: Hack-Regular, Helvetica, sans-serif;
-  --main-font-size: 24px;
+  --main-font-size: 22px;
   --main-color: white;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
@@ -34,7 +34,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --link-color: darksalmon;
   --link-color-hover: yellow;
   --selection-background-color: indigo;
-  --selection-color: white; }
+  --selection-color: #fff; }
 
 .reveal-viewport {
   background: black;
@@ -42,18 +42,18 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .reveal {
   font-family: "Hack-Regular", Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: normal;
   color: white; }
 
 .reveal ::selection {
   color: #fff;
-  background: #fbece7;
+  background: indigo;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: #fbece7;
+  background: indigo;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -252,7 +252,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #f4cabc;
+  color: yellow;
   text-shadow: none;
   border: none; }
 

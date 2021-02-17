@@ -116,14 +116,20 @@
 					<h4>System Requirements</h4>
 					<p>Togethernet is a desktop web app that launches inside the browser. Currently the application runs as intended on Firefox
 					(version 85.0.2) and Chrome (version 88.0.4324.150).</p>
+				</section>
+				<section>
 					<h4>Capacity</h4>
 					<p>Togethernet intends to facilitate consentful communications, and as we know consent is easier to negotiate within a
 					micro-community. Therefore by default the application will accommodate a maximum of 12 simultaneous participants.<sup>3</sup></p>
+					<p><sup>3</sup> It is possible to increase the number of participants by changing the environment variable inside the
+						source code, however we don’t recommend doing so without first gaining a good familiarity with how the application
+						works.</p>
+				</section>
+				<section>
 					<h4>Demo</h4>
-					<p>We invite you to <a href='https://togethernet.herokuapp.com/' target='_blank'>visit this link</a> to try out a demo version of the software. In order to test out the
-					collaborative features, we encourage you to invite a friend to join.</p>
-					<p><sup>3</sup> It is possible to increase the number of participants by changing the environment variable inside the source code,
-					however we don’t recommend doing so without first gaining a good familiarity with how the application works.</p>
+					<p>We invite you to <a href='https://togethernet.herokuapp.com/' target='_blank'>visit this link</a> to try out a demo
+						version of the software. In order to test out the collaborative features, we encourage you to invite a friend to
+						join.</p>
 				</section>
 				<section>
 					<h2>Software Architecture</h2>
@@ -150,38 +156,45 @@
 					to that happening, you both require exchanging a secret handshake. The information you share is functionally protected
 					by the mediating act of completing the handshake, whose steps are known only by the two of you. This is akin to the
 					level of privacy enabled by WebRTC’s encryption in peer-to-peer mode.</p>
-					<p>Once your peers receive data sent from your browser, you have the agency to remove this data by deleting the messages.
-					In the Ephemeral Channel, messages disappear once the last person in a given chat session departs. If you leave a
-					session but return before the last person has departed, your messages will still be visible and accessible to those in
-					the chat.</p>
+				</section>
+				<section>
+					<p>Once your peers receive data sent from your browser, you have the agency to remove this data by deleting the
+						messages. In the Ephemeral Channel, messages disappear once the last person in a given chat session departs. If you
+						leave a session but return before the last person has departed, your messages will still be visible and accessible
+						to those in the chat.</p>
 				</section>
 				<section>
 					<h4>The Role of the Server</h4>
 					<p>While WebRTC is distinctive in that it enables encrypted peer-to-peer connections via browsers, servers are still
 					required in order to facilitate these connections. Think of the server as an impartial mediator.</p>
+				</section>
+				<section>
 					<p>For a connection to be established between you and a peer, information on your respective locations must be exchanged
-					over the server. The information that is given pertains to your local IP address, which takes place inside your browser
-					and is executed by Javascript and being sent out to what is called the signaling server.<sup>4</sup> Once location data has been
-					sent to the signaling server, it is not retrievable.</p>
-					<p>Communication between you and your peer happens via offers and answers that are mediated by this signaling server. These
-					offers, sent by the initiating browser to a receiving browser, occur once you have consented to begin an exchange on the
-					software at the start of the software.</p>
-					<p><sup>4</sup> To learn more about the role of the signaling server, we invite you to visit <a href='https://webrtc.org/getting-started/peer-connections' target='_blank'>WebRTC.org</a>.</p>
+						over the server. The information that is given pertains to your local IP address, which takes place inside your
+						browser and is executed by Javascript and being sent out to what is called the signaling server.<sup>4</sup> Once
+						location data has been sent to the signaling server, it is not retrievable.</p>
+					<p>Communication between you and your peer happens via offers and answers that are mediated by this signaling server.
+						These offers, sent by the initiating browser to a receiving browser, occur once you have consented to begin an
+						exchange on the software at the start of the software.</p>
+					<p><sup>4</sup> To learn more about the role of the signaling server, we invite you to visit <a
+							href='https://webrtc.org/getting-started/peer-connections' target='_blank'>WebRTC.org</a>.</p>
 				</section>
 				<section>
 					<h3>Peer to Server: Archival Channel</h3>
 					<p>The Archival Channel operates under the logic of peer-to-server consent, where communications are published to a
 					centralized database.</p>
-					<p>Once messages are published to the Archival Channel, users can enter the room and become an editor. The first person to
-					enter the room is automatically the editor. Subsequent users who enter the chat can become the editor by selecting the
-					function in the bottom-left corner.<sup>5</sup></p>
+				</section>
+				<section>
+					<p>Once messages are published to the Archival Channel, users can enter the room and become an editor. The first person
+						to enter the room is automatically the editor. Subsequent users who enter the chat can become the editor by
+						selecting the function in the bottom-left corner.<sup>5</sup></p>
 					<p>The editor is armed with the ability to delete a message without necessarily having collective consent; as such, this
-					role is one that requires an abundance of care and trust by peer users. It is encouraged that users communicate with
-					their peers prior to removing messages from the archive. When messages are deleted, a trace is left in the archive that
-					labels the removed message as having been deleted by the user.</p>
-					<p><sup>5</sup> There can only be one editor at a time in the Archival Channel, and since users maintain default anonymity even in this
-					mode, participants are encouraged to label themselves with a recognizable name (though this does not necessarily need to
-					be a formal or ‘real’ name).</p>
+						role is one that requires an abundance of care and trust by peer users. It is encouraged that users communicate with
+						their peers prior to removing messages from the archive. When messages are deleted, a trace is left in the archive
+						that labels the removed message as having been deleted by the user.</p>
+					<p><sup>5</sup> There can only be one editor at a time in the Archival Channel, and since users maintain default
+						anonymity even in this mode, participants are encouraged to label themselves with a recognizable name (though this
+						does not necessarily need to be a formal or ‘real’ name).</p>
 				</section>
 				<section>
 					<p>The Archival Channel’s default database runs on <a href='https://www.postgresql.org/' target='_blank'>PostGres</a>, an open source database that users can run on their own, or a third-party server. Messages in the Archival Channel can
