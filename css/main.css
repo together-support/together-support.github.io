@@ -1,0 +1,59 @@
+body{
+	margin:0;
+	font-size:40px;
+}
+section{
+	border-bottom:1px solid black;
+}
+
+button{
+	background: none;
+	outline: none;
+	border: none;
+}
+/* ACCESSIBILITY */
+.screenreader-text{
+	visibility: hidden;
+	width:0;
+	height:0;
+}
+
+/* NAVIGATION */
+nav{
+	min-height:90vh;
+	width:100%;
+	background: white;
+	position:absolute;
+	top:0;
+	left:0;
+}
+nav .icon-menu{
+	pointer-events: none;
+}
+nav.closed .icon-menu, nav.open .icon-menu{
+	pointer-events: auto;
+}
+nav.closed{
+	overflow: hidden;
+	min-height:0;
+	position: fixed;
+}
+nav.closed ul{
+	margin:0;
+	overflow: hidden;
+	height:0;
+}
+nav.open{
+	position: fixed;
+	background: lightgrey;
+}
+.icon-menu{
+	color:grey;
+	font-size:50px;
+	cursor: pointer; 
+}
+
+main{
+	margin-top:calc(100vh - 35px);
+}
+

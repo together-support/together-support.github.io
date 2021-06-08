@@ -1,113 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>Togethernet</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/coc.css" id="theme">
-
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-				<section>
-					<h1>Togethernet</h1> 
-					<p>thoughtful software for consentful organizations</p>
-				</section>
-				<section>
-					<p>Togethernet is a collaborative archiving software in the form of a desktop web app that allows both peer-to-peer
-					(P2P), traceless messaging as well as archived communications.</p>
-					<p>Designed around the ethos of data transparency and consent, the goal of the software is to transform digital rights practices such as the <a href='https://gdpr.eu/right-to-be-forgotten/' target='_blank'>right to be forgotten</a> into an embodied practice through the reimagination of software architecture and user experience.</p>
-				</section>
-				<section>
-					<p>This tool and initiative stands on the shoulder of <a href='https://www.andalsotoo.net/wp-content/uploads/2018/10/Building-Consentful-Tech-Zine-SPREADS.pdf'
-						target='_blank'>Consentful Tech Zine</a> by Una Lee and Dann Toliver and <a href='https://designjustice.org/read-the-principles' target='_blank'>Design Justice Network Principles</a> ⁠— by considering transparency and consent every step of the way, the <a href='https://github.com/together-support/togethernet' target='_blank'>source code</a>  serves as both
-					a technical and a moral document that seeks to uncover systems of power and uncertainties embedded in network
-					technologies.</p>
-				</section>
-				<section>
-					<h2>Communication Channels</h2>
-					<p>The software contains two types of communication channels: the Ephemeral Channel and the Archival Channel.</p>
-				</section>
-				<section>
-					<h2>Ephemeral Channel</h2>
-					<img class = "fade-in-then-out" src="assets/screenshots/togethernetIntro.png">
-				</section>
-				<section>
-					<p>The Ephemeral Channel uses the WebRTC peer-to-peer protocol, which means conversations do not go through a centralized
-					server (bye google facebook AWS 👋🏼) and are permenantly erased once the browser closes.</p>
-					<p>The privacy level in the Ephemeral Channel is comparable to talking to friends on a picnic blanket at the park — your
-					conversations won’t be heard unless someone is intentionally trying to listen in.</p>
-				</section>
-				<section>
-					<h2>Archival Channel</h2>
-					<img class="fade-in-then-out" src="assets/screenshots/archivalScreenshot.png">
-				</section>
-				<section>
-					<p>The Archival Channel publishes meeting notes to a centeralized database that your organization may self-host or host on
-					a third party’s server.</p>
-					<p>The security level here is comparable to posting a note on a bulletin board — your words are now floating out there on the World Wide Web as a form of public record, and
-					others may quote or use it in ways that are outside of your control. Organizations often need to create content that
-					needs to be seen by the public and this is useful for that.</p>
-				</section>
-				<section>
-					<p>Consider how the content and tone of your speech might change tallking to friends at the park versus writing a note for the bulletin board. By making the public and the private more explicit in the digital space, Togethernet aims to transform digital
-					rights policies into an embodied, everyday practice.</p>
-				</section>
-				<section>
-					<h2>Getting Started</h2>
-					<p>To begin, we invite you to read through the <a href='code-of-consent.html' target='_blank'>Code of Consent</a> document we have prepared for you.</p>
-					<p>The document will take 15~30 minutes to go through. We would like to make sure that you feel informed before proceeding to the software orientation.</p>
-				</section>
+		<!-- NAVIGATION -->
+		
+		<nav id="main-nav" class="">
+			<button id="nav-trigger" aria-expanded="false" aria-label="Mobile Navigation Button">
+		      <span class="icon-menu">⬤</span>
+		      <span id="nav-status" class="other-trigger-status screenreader-text closed">Close</span>
+		    </button>
+			<a href="#main" class="screenreader-text">skip to main content</a>
+			<ul>
+				<li><a href="#section-1">Section 1</a></li>
+				<li><a href="#section-2">Section 2</a></li>
+				<li><a href="#section-3">Section 3</a></li>
+				<li><a href="#section-4">Section 4</a></li>
+				<li><a href="#section-5">Section 5</a></li>
+				<li><a href="#section-6">Section 6</a></li>
+			</ul>
+		</nav>
+		<!-- END NAVIGATION -->
+		<main id="main">
+			<section id="section-1">
+				Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.
+			</section>
+			<section id="section-2">
+				Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
-				<section>
-					<h2>Join the Community!</h2>
-					<p>Togethernet is at an early stage of development. If you're interested in joining a community of digital consent enthusiasts to become a Togethernet stakeholder,
-						we would love to invite you to join Togethernet's
-							Discord</a>.</p>
-					<p>Before entering the community, please read and agree to our <a href='code-of-conduct.html' target='_blank'>Community Code of Conduct</a>.</p>
-				</section>
-				<section>
-					<h2>Togethernet v0.1 Team</h2>
-					<ul>
-						<li>Lead Artist 🧛🏻‍♀️ Xin Xin</li>
-						<li>Lead Software Developer 🏜 Charlotte Yaqing Wen</li> 
-						<li>Lead Writer 🧚🏾‍♂️ Neema Githere</li> 
-						<li>Advisor 😶 Lauren Lee McCarthy</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Special Thanks</h2>
-					<p>Kemi Sijuwade-Ukadike, J. Soto, Sally Szwed, Roddy Schrock, Maddie Pinney, Eric Tang, Dorothy R. Santos, Kate
-						Hollenbach, Lee Tusman, An Xiao Mina</p>
-					<p>This project supported by and produced at Eyebeam.</p>
-				</section>
-				</section>
-			</div>
-		</div>
+				Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
+			</section>
+			<section id="section-3">
+				Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.
+			</section>
+			<section id="section-4">
+				Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.
+			</section>
+			<section id="section-5">
+				Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
+				Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.
+			</section>
+			<section id="section-6">
+				Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.
+			</section>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
