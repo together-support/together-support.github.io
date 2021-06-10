@@ -11,6 +11,9 @@ button{
 	outline: none;
 	border: none;
 }
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
 /* ACCESSIBILITY */
 .screenreader-text{
 	visibility: hidden;
@@ -22,10 +25,10 @@ button{
 nav{
 	min-height:90vh;
 	width:100%;
-	background: white;
 	position:absolute;
 	top:0;
 	left:0;
+	z-index: 2;
 }
 nav .icon-menu{
 	pointer-events: none;
@@ -35,16 +38,22 @@ nav.closed .icon-menu, nav.open .icon-menu{
 }
 nav.closed{
 	overflow: hidden;
-	min-height:0;
+	height:auto;
+	transform:translateY(-100%);
 	position: fixed;
+	transition:transform 0.2s;
+	background: lightgrey;
 }
 nav.closed ul{
 	margin:0;
 	overflow: hidden;
-	height:0;
 }
 nav.open{
+	transform:translateY(0%);
+	height:auto;
+	min-height:100vh;
 	position: fixed;
+	transition:transform 0.2s;
 	background: lightgrey;
 }
 .icon-menu{
@@ -52,8 +61,24 @@ nav.open{
 	font-size:50px;
 	cursor: pointer; 
 }
-
+#nav-trigger{
+	position: fixed;
+	z-index: 3;
+	top:0;
+	left:0;
+}
 main{
 	margin-top:calc(100vh - 35px);
 }
-
+/* HEADERS */
+h1{
+	text-align:center;
+	position: sticky;
+	top:0;
+	background:white;
+	margin:0 auto;
+}
+/* SECTIONS */
+section{
+	min-height:100vh;
+}
