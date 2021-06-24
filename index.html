@@ -15,13 +15,33 @@
 					<p>We make thoughtful software for consentful organizations</p>
 				</div>
 			</div>
-			<div class="in-page-navigation">
-				<ul>
+			<div class="navigation">
+				<ul class="global-nav">
+					<li><a href="#section-1">Intro</a></li>
+					<li><a href="#section-1">Getting Started</a></li>
+					<li><a href="#section-1">Code of Consent</a></li>
+					<li><a href="#section-1">Orientation</a></li>
+					<li><a href="#section-1">Community</a></li>
+				</ul>
+				<ul class="in-page-navigation">
 					<li><a href="#section-1">Section title</a></li>
 					<li><a href="#section-2">A different section title that goes to two lines</a></li>
 					<li><a href="#section-3">Section title</a></li>
 					<li><a href="#section-4">Another section title</a></li>
 				</ul>
+				<div class="setting-toggles">
+					<div class="setting">
+						<div>High Contrast Mode:</div>
+					<div>
+						<input type="radio" id="high-contrast-off" name="contrast_mode" value="off" checked><label for="high-contrast-off">off</label>
+						  <input type="radio" id="high-contrast-on" name="contrast_mode" value="on"><label for="high-contrast-on">on</label>
+					</div>
+					</div>
+					<div class="setting">
+						<div>
+					Link to text-only version of site:</div> <a href="liink"> Google Doc</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<main>
@@ -65,6 +85,13 @@
 			<section id="section-3">
 				<hr>
 				<h1>Heading 3 this is a long section title</h1>
+				<div class="audio">
+					<p>Listen to this section:</p>
+					<audio controls>
+						<source src="assets/audio/Tlbarret.mp3" type="audio/mpeg">
+						Your browser does not suupport the audio element.
+					</audio>
+				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<hr>
 				<h3>Who should use this?</h3>
@@ -82,6 +109,24 @@
 				<button>inline button</button>
 			</section>
 		</main>
+		<footer>
+			<div class="footer-left">
+				<h4>Stay connected</h4>
+				<p>We will send occasional updates about Togethernet’s progress, events, and ways to get involved. We will never share your information with anyone else.</p>
+				<p>Please enter your email</p><br>
+				<input type="text"/>
+				<button>submit</button>
+			</div>
+			<div class="footer-right">
+				<ul class="social-media">
+					<li><a href="/"><img src="assets/icons/instagram.svg" alt="instagram"/></a></li>
+					<li><a href="/"><img src="assets/icons/discord.svg" alt="discord"/></a></li>
+					<li><a href="/"><img src="assets/icons/github.svg" alt="github"/></a></li>
+				</ul>
+				<p>some kind of copyright info or small text</p>
+			</div>
+
+		</footer>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
