@@ -1,0 +1,40 @@
+
+/*Autopia-Bold-Italic*/
+@font-face {
+    font-family: 'Autopia-Bold-Italic';
+    src: url('Autopia-Bold-Italic/Autopia-Bold-Italic.eot'); /* IE 9 Compatibility Mode */
+    src: url('Autopia-Bold-Italic/Autopia-Bold-Italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+         url('Autopia-Bold-Italic/Autopia-Bold-Italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+         url('Autopia-Bold-Italic/Autopia-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Autopia-Bold-Italic/Autopia-Bold-Italic.svg#Autopia-Bold-Italic') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+
+/*Autopia-Bold*/
+@font-face {
+    font-family: 'Autopia-Bold';
+    src: url('Autopia-Bold/Autopia-Bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('Autopia-Bold/Autopia-Bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+         url('Autopia-Bold/Autopia-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+         url('Autopia-Bold/Autopia-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Autopia-Bold/Autopia-Bold.svg#Autopia-Bold') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+
+/*Autopia-Italic*/
+@font-face {
+    font-family: 'Autopia-Italic';
+    src: url('Autopia-Italic/Autopia-Italic.eot'); /* IE 9 Compatibility Mode */
+    src: url('Autopia-Italic/Autopia-Italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+         url('Autopia-Italic/Autopia-Italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+         url('Autopia-Italic/Autopia-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Autopia-Italic/Autopia-Italic.svg#Autopia-Italic') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+
+/*Autopia-Regular*/
+@font-face {
+    font-family: 'Autopia-Regular';
+    src: url('Autopia-Regular/Autopia-Regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('Autopia-Regular/Autopia-Regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+         url('Autopia-Regular/Autopia-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+         url('Autopia-Regular/Autopia-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Autopia-Regular/Autopia-Regular.svg#Autopia-Regular') format('svg'); /* Chrome < 4, Legacy iOS */
+    }

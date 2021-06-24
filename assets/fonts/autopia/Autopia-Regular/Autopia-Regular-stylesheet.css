@@ -1,0 +1,10 @@
+
+/*Autopia-Regular*/
+@font-face {
+    font-family: 'Autopia-Regular';
+    src: url('Autopia-Regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('Autopia-Regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+         url('Autopia-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+         url('Autopia-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Autopia-Regular.svg#Autopia-Regular') format('svg'); /* Chrome < 4, Legacy iOS */
+    }

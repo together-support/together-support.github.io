@@ -1,0 +1,10 @@
+
+/*Autopia-Italic*/
+@font-face {
+    font-family: 'Autopia-Italic';
+    src: url('Autopia-Italic.eot'); /* IE 9 Compatibility Mode */
+    src: url('Autopia-Italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+         url('Autopia-Italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+         url('Autopia-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Autopia-Italic.svg#Autopia-Italic') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
