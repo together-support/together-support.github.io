@@ -42,3 +42,13 @@ document.getElementById("mobile-nav-trigger").addEventListener("click",function(
 		document.querySelector("#left-sticky").classList.add("open")
 	}
 })
+
+
+document.querySelector(".navigation").addEventListener("click",function(){
+	if(this.classList.contains("open")){
+		document.querySelector(".navigation").classList.remove("open");
+	}else{
+		document.querySelector(".navigation").classList.add("open")
+	}
+})
+

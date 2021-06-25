@@ -389,6 +389,27 @@ main ol li{
 		position: relative;
 		width: calc(100% - 80px);
 	}
+	.navigation.open{
+		height: auto;
+	}
+	.navigation.open li a{
+		display: block;
+		padding:10px 0;
+
+	}
+	.navigation.open ul{
+		padding-top:50px;
+	}
+	.navigation.open li a.on{
+		display: block;
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+	}
+	.navigation.open .in-page-navigation::after{
+		transform:rotate(180deg);
+	}
 	.navigation .in-page-navigation::after{
 		content:" ";
 		background: url(../assets/icons/caret.svg);
