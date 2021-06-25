@@ -32,3 +32,13 @@ function whichSection() {
 		}
 	}
 }
+
+document.getElementById("mobile-nav-trigger").addEventListener("click",function(){
+	if(this.classList.contains("open")){
+		this.classList.remove("open");
+		document.querySelector("#left-sticky").classList.remove("open")
+	}else{
+		this.classList.add("open")
+		document.querySelector("#left-sticky").classList.add("open")
+	}
+})

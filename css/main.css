@@ -156,6 +156,9 @@ h3{
 	width: 50%;
 
 }
+#mobile-nav-trigger{
+	display: none;
+}
 .intro img,.intro p{
 	width: 29.4vw;
 	display:block;
@@ -334,16 +337,20 @@ main ol li{
 		position: relative;
 
 	}
+	main{
+		padding: 25px;
+	}
 	/* NAVIGATION */
 	#left-sticky, main{
 		display: block;
 		width: auto;
 		float:none;
+
 	}
 	#left-sticky{
 		position: sticky;
 		display: block;
-		top:0;
+		z-index: 9;
 		top:calc(-100vh + 50px);
 
 	}
@@ -358,6 +365,104 @@ main ol li{
 		overflow: hidden;
 
 	}
+	.navigation .setting-toggles, .navigation .global-nav{
+		display: none;
+	}
+	.navigation li{
+		padding:0;
+		
+		font-size:14px;
+		border: none;
+	}
+	.navigation li a{
+		display: none;
+		padding:10px 0;
+	}
+	.navigation li a.on{
+		display: block;
+	}
+	.navigation li a.on::before{
+		height: 18px;
+    	width: 30px;
+	}
+	.navigation .in-page-navigation{
+		position: relative;
+		width: calc(100% - 80px);
+	}
+	.navigation .in-page-navigation::after{
+		content:" ";
+		background: url(../assets/icons/caret.svg);
+		background-repeat: no-repeat;
+		background-size:contain;
+		background-position: center;
+		margin-left:50px;
+		display: inline-block;
+		position: absolute;
+		right:0;
+		top:0;
+		width: 20px;
+		height: 50px;
+	}
+	.navigation li a.on:before{
+		display: none;
+	}
+	#mobile-nav-trigger{
+		display: inline-block;
+		position: absolute;
+		background: linear-gradient(90deg, #49387B 0%, #404385 100%);
+		width: 50px;
+		height:50px;
+		right:0;
+		text-align: center;
+		top:0;
+		z-index: 999;
+		cursor: pointer;
+	}
+	#mobile-nav-trigger svg{
+		position: relative;
+		top:10px;
+		transition: 0.2s;
+	}
+	#mobile-nav-trigger.open svg{
+		transform: rotate(45deg);
+	}
+	#left-sticky.open .navigation{
+		height: 100vh;
+	}
+	#left-sticky.open .navigation .setting-toggles, #left-sticky.open .navigation .global-nav{
+		display: block;
+	}
+	#left-sticky.open .navigation ul{
+		padding: 0;
+	}
+	#left-sticky.open .navigation li{
+		padding:0;
+		width: 100%;
+		margin:0;
+		font-size:17px;
+		border-bottom: 1px solid;
+	}
+	#left-sticky.open .navigation li:last-child{
+		border:none;
+	}
+	#left-sticky.open .global-nav{
+		margin-top:5em;
+	}
+	#left-sticky.open .navigation .in-page-navigation{
+		display: none;
+	}
+	#left-sticky.open .navigation li a{
+		display: block;
+		padding:10px 0;
+	}
+	#left-sticky.open .navigation li a.on{
+		display: block;
+	}
+	#left-sticky.open .navigation li a.on::before{
+		height: 18px;
+    	width: 30px;
+	}
+
 	/* FOOTER */
 	footer{
 		flex-direction: column;
