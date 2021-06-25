@@ -23,7 +23,7 @@ function whichSection() {
 
 	let sections = document.getElementsByTagName('section');
 	for (var i = sections.length - 1; i >= 0; i--) {
-		console.log(isScrolledIntoView(sections[i]))
+		
 		if(isScrolledIntoView(sections[i])){
 			if(document.querySelectorAll(".in-page-navigation a.on")[0]){
 				document.querySelectorAll(".in-page-navigation a.on")[0].classList.remove("on")
