@@ -52,3 +52,10 @@ document.querySelector(".navigation").addEventListener("click",function(){
 	}
 })
 
+
+document.querySelector("#high-contrast-off").addEventListener('change', () => {
+   document.body.classList.remove("contrast");
+  })
+document.querySelector("#high-contrast-on").addEventListener('change', () => {
+    document.body.classList.add("contrast");
+  })
