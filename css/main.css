@@ -135,10 +135,13 @@ h3{
 }
 /* ACCESSIBILITY */
 .screenreader-text{
-	visibility: hidden;
+	visibility: visible;
+	opacity: 0;
 	width:0;
+	display: block;
 	height:0;
 }
+
 .audio{
 	margin-top:-1em;
 	border:1px solid #2A1D64;
@@ -261,17 +264,19 @@ h3{
  	padding: 0;
 
 }
+.setting fieldset{
+	border:none;
+}
 .setting{
+	text-align: left;
 	padding:25px 50px;
 	font-size:16px;
 	display: flex;
 	justify-content: space-between;
 	border-bottom:1px solid;
 }
-.setting input ~ .check{
-	pointer-events: none;
-}
-.setting input ~ .check::before{
+
+.setting input ~ label::before{
 	content: '◯';
 	opacity: 1;
 	position: absolute;
@@ -279,13 +284,18 @@ h3{
 	font-size: 25px;
 	display: inline-block;
 }
-.setting input:checked ~ .check::before{
+.setting input:checked ~ label::before{
 	content: '◉';
 	opacity: 1;
 	position: absolute;
 	left:0;
 	font-size: 28px;
 	display: inline-block;
+}
+.setting input:focus + label{
+	box-shadow: 0 0px 5px white;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 5px;
 }
 .setting .option{
 	position: relative;
@@ -296,6 +306,10 @@ h3{
 	cursor: pointer;
 	margin-left:25px;
 	text-align:left;
+	display: inline-block;
+}
+.setting a{
+	border:none;
 	display: inline-block;
 }
 .setting input{

@@ -33,6 +33,9 @@ function whichSection() {
 	}
 }
 
+let enterKeyCode = 13;
+let spaceKeyCode = 32;
+
 document.getElementById("mobile-nav-trigger").addEventListener("click",function(){
 	if(this.classList.contains("open")){
 		this.classList.remove("open");
@@ -42,6 +45,17 @@ document.getElementById("mobile-nav-trigger").addEventListener("click",function(
 		document.querySelector("#left-sticky").classList.add("open")
 	}
 })
+document.getElementById("mobile-nav-trigger").addEventListener("keyup",function(event){
+	if(event.keyCode == enterKeyCode || event.keyCode == spaceKeyCode) {
+		if(this.classList.contains("open")){
+			this.classList.remove("open");
+			document.querySelector("#left-sticky").classList.remove("open")
+		}else{
+			this.classList.add("open")
+			document.querySelector("#left-sticky").classList.add("open")
+		}
+	}
+})
 
 
 document.querySelector(".navigation").addEventListener("click",function(){
@@ -49,6 +63,17 @@ document.querySelector(".navigation").addEventListener("click",function(){
 		document.querySelector(".navigation").classList.remove("open");
 	}else{
 		document.querySelector(".navigation").classList.add("open")
+	}
+})
+
+
+document.querySelector(".navigation").addEventListener("keyup",function(event){
+	if(event.keyCode == enterKeyCode || event.keyCode == spaceKeyCode) {
+		if(this.classList.contains("open")){
+			document.querySelector(".navigation").classList.remove("open");
+		}else{
+			document.querySelector(".navigation").classList.add("open")
+		}
 	}
 })
 
