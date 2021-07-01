@@ -74,7 +74,10 @@ body.contrast{
 
 }
 body.contrast #left-sticky, body.contrast .navigation, body.contrast footer{
-	filter:grayscale(100%) contrast(200%);
+	filter: grayscale(100%) contrast(200%);
+}
+body.contrast #left-sticky{
+	color:#EDECE9;
 }
 body.contrast main{
 	color:#EDECE9;
