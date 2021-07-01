@@ -58,8 +58,8 @@ document.getElementById("mobile-nav-trigger").addEventListener("keyup",function(
 })
 
 
-document.querySelector(".navigation").addEventListener("click",function(){
-	if(this.classList.contains("open")){
+document.querySelector("#mobile-nav-trigger").addEventListener("click",function(){
+	if(document.querySelector(".navigation").classList.contains("open")){
 		document.querySelector(".navigation").classList.remove("open");
 	}else{
 		document.querySelector(".navigation").classList.add("open")
@@ -67,9 +67,9 @@ document.querySelector(".navigation").addEventListener("click",function(){
 })
 
 
-document.querySelector(".navigation").addEventListener("keyup",function(event){
+document.querySelector("#mobile-nav-trigger").addEventListener("keyup",function(event){
 	if(event.keyCode == enterKeyCode || event.keyCode == spaceKeyCode) {
-		if(this.classList.contains("open")){
+		if(document.querySelector(".navigation").classList.contains("open")){
 			document.querySelector(".navigation").classList.remove("open");
 		}else{
 			document.querySelector(".navigation").classList.add("open")
@@ -80,7 +80,22 @@ document.querySelector(".navigation").addEventListener("keyup",function(event){
 
 document.querySelector("#high-contrast-off").addEventListener('change', () => {
    document.body.classList.remove("contrast");
+   localStorage.setItem('contrast', "false");
+
   })
 document.querySelector("#high-contrast-on").addEventListener('change', () => {
     document.body.classList.add("contrast");
+    localStorage.setItem('contrast', "true");
+
   })
+
+
+
+
+document.addEventListener("DOMContentLoaded", function(){
+	const contrast = localStorage.getItem('contrast');
+	if(contrast == "true"){
+		document.body.classList.add("contrast");
+		document.getElementById("high-contrast-on").checked = true;
+	}
+});

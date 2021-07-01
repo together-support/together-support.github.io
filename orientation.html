@@ -8,58 +8,63 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-	<!-- 	Page Container  -->
+	
+					<!-- 	Intro logo and stars  -->
+		<div class="intro">
+			<div class="inner">
+				<div>
+					<img alt="togethernet logo (text that reads togethernet in a slightly crunchy/hippie-looking font)" src="assets/icons/togethernet_logo.svg">
+					<p>We make thoughtful software for consentful organizations</p>
+				</div>
+			</div>
+		</div>
+			<!-- 	Page Container  -->
 		<div class="page">
+			<a href="#main" class="screenreader-text">skip to main content</a>
 			<!-- 	Navigation and intro with stars -->
-			<div id="left-sticky">
-				<!-- 	Intro logo and stars  -->
-				<div class="intro">
-					<div>
-						<img alt="togethernet logo (text that reads togethernet in a slightly crunchy/hippie-looking font)" src="assets/icons/togethernet_logo.svg">
-						<p>We make thoughtful software for consentful organizations</p>
+			<nav class="navigation">
+				<!-- 	Mobile Nav trigger  -->
+				<div tabindex="0" aria-label='Open the global navigation menu on mobile ' id="mobile-nav-trigger">
+					<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="13.6426" y1="29.142" x2="13.6426" y2="0.857921" stroke="#EDECE9"/>
+					<line y1="14.4999" x2="28.2841" y2="14.4999" stroke="#EDECE9"/>
+					</svg>
+				</div>
+				<!-- Global Navigation  -->
+				<ul class="global-nav">
+					<li><a href="/">Introduction</a></li>
+					<li><a href="./getting-started.html">Getting Started</a></li>
+					<li><a href="./community.html">Community</a></li>
+				</ul>
+				<!-- Accessibility Settings  -->
+				<div class="setting-toggles">
+					<div class="setting">
+						<div>High Contrast Mode:</div>
+					<fieldset>
+						<div class='option'>
+							<input type="radio" id="high-contrast-off" name="contrast" value="off" checked><label for="high-contrast-off">off</label>
+						</div>
+						<div class='option'>
+							<input type="radio" id="high-contrast-on" name="contrast" value="on"><label for="high-contrast-on">on</label>
+						</div>
+					</fieldset>
+					</div>
+					<div class="setting">
+						<div>
+					Link to text-only version of site:</div> <a href="liink"> Google Doc</a>
 					</div>
 				</div>
-				<!-- 	Navigation Menu  -->
-				<div class="navigation" tab="0" aria-label="open the in-page navigation menu on mobile">
-					<!-- 	Mobile Nav trigger  -->
-					<div tabindex="0" aria-label='Open the global navigation menu on mobile' id="mobile-nav-trigger">
-						<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<line x1="13.6426" y1="29.142" x2="13.6426" y2="0.857921" stroke="#EDECE9"/>
-						<line y1="14.4999" x2="28.2841" y2="14.4999" stroke="#EDECE9"/>
-						</svg>
-					</div>
-					<!-- Global Navigation  -->
-					<ul class="global-nav">
-						<li><a href="/">Introduction</a></li>
-						<li><a href="./getting-started.html">Getting Started</a></li>
-						<li><a href="./community.html">Community</a></li>
-					</ul>
+			</nav>
+
+			<div id="left-sticky">				
 					<!-- 	In Page Navigation  -->
-					<ul class="in-page-navigation">
-						<li><a href="#section-1">Section title</a></li>
-						<li><a href="#section-2">A different section title that goes to two lines</a></li>
-						<li><a href="#section-3">title</a></li>
-						<li><a href="#section-4">Another section title</a></li>
-					</ul>
-					<!-- Accessibility Settings  -->
-					<div class="setting-toggles">
-						<div class="setting">
-							<div>High Contrast Mode:</div>
-						<fieldset>
-							<div class='option'>
-								<input type="radio" id="high-contrast-off" name="contrast" value="off" checked><label for="high-contrast-off">off</label>
-							</div>
-							<div class='option'>
-								<input type="radio" id="high-contrast-on" name="contrast" value="on"><label for="high-contrast-on">on</label>
-							</div>
-						</fieldset>
-						</div>
-						<div class="setting">
-							<div>
-						Link to text-only version of site:</div> <a href="liink"> Google Doc</a>
-						</div>
-					</div>
-				</div>
+				<ul class="in-page-navigation">
+					<li><a href="#section-1">Section title</a></li>
+					<li><a href="#section-2">A different section title that goes to two lines</a></li>
+					<li><a href="#section-3">title</a></li>
+					<li><a href="#section-4">Another section title</a></li>
+				</ul>
+		
 			</div>
 			<!-- 	Page content  -->
 			<main>
