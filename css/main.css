@@ -98,12 +98,13 @@ body.contrast .intro{
 	color:#EDECE9;
 	filter: grayscale(100%) contrast(200%);
 }
+
 /* Button styles */
 
 a.button, button{
 	display: inline-block;
 	width: 40%;
-	margin: 20px 0;
+	margin: 20px auto;
 	background: none;
 	outline: none;
 	border: 1px solid;
