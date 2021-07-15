@@ -98,7 +98,9 @@ body.contrast .intro{
 	color:#EDECE9;
 	filter: grayscale(100%) contrast(200%);
 }
-
+.in-page-navigation li a.on:before{
+	filter:invert(200%);
+}
 /* Button styles */
 
 a.button, button{
@@ -601,6 +603,7 @@ main ol li{
 	}
 	.intro{
 		height: calc(100vh - 50px);
+		overflow-y: hidden;
 	}
 
 	.in-page-navigation{
