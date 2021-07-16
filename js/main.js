@@ -11,8 +11,11 @@ function isScrolledIntoView(element) {
   var rect = element.getBoundingClientRect();
 
   var html = document.documentElement;
+  console.log(element.id)
+  console.log(rect.top, rect.top < 0)
   return (
-    rect.top >= (-1  * y)
+    rect.top < 0
+
   );
 }
 
@@ -22,10 +25,10 @@ window.onscroll = function() {whichSection()};
 function whichSection() {
 
 	let sections = document.getElementsByTagName('section');
-	for (var i = sections.length - 1; i >= 0; i--) {
+	for (var i = 0; i <= sections.length - 1; i++) {
 		
 		if(isScrolledIntoView(sections[i])){
-		
+
 			if(document.querySelectorAll(".in-page-navigation a.on")[0]){
 				document.querySelectorAll(".in-page-navigation a.on")[0].classList.remove("on")
 			}
