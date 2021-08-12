@@ -98,7 +98,7 @@ body.contrast .intro{
 	color:#EDECE9;
 	filter: grayscale(100%) contrast(200%);
 }
-.in-page-navigation li a.on:before{
+body.contrast .in-page-navigation li a.on:before{
 	filter:invert(200%);
 }
 /* Button styles */
@@ -240,6 +240,7 @@ h3{
 .inner{
 	background: url('../assets/textures/stars.png');
 	background-size:auto 100vh;
+	background-position:center center;
 	/* background-position: 40% center; */
 	/* background-repeat:repeat; */
 }
@@ -605,7 +606,7 @@ main ol li{
 		height: calc(100vh - 50px);
 		overflow-y: hidden;
 	}
-
+	
 	.in-page-navigation{
 		display: none;
 	}
