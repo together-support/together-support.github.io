@@ -143,21 +143,20 @@
 				<section id="section-3">
 					<hr>
 					<h1>Software Architecture</h1>
-					<p>Togethernet is designed to invite you to say “YES!” along the way.</p>
+					<p>This section contains more technical language and is geared towards providing insight into the practical functionings
+					behind Togethernet.</p>
 					<h2>Peer to Peer Consent: Ephemeral Channel</h2>
+					<p>On a peer-to-peer level, Togethernet is designed to invite you to say “YES!” along the way.</p>
 					<p>While using Togethernet, all text-based communications with your community take place under the <i>Ephemeral Channels</i>.
 					Operating under the logic of peer-to-peer consent, the communication records created during the live session in
 					<i>Ephemeral Channel</i> will be permanently deleted once the last participant closes their browser tab. To prevent messages from
 					being deleted, participants need to go through the Consent to Archive process in order to publish the content to the
-					<i>Archival Channel</i>, allowing the users to make <i>informed decisions</i> regarding their own privacy level while using
+					<i>Archival Channel</i> – a feature which allows users to make <i>informed decisions</i> regarding their own privacy level while using
 					Togethernet.</p>
-					<p>In WebRTC, real time communications are achieved without needing to install any additional applications or plug-ins. The
-					information that is transmitted between your browsers is anonymously and freely given by you as a user. There are no
-					logins on Togethernet because on this peer-to-peer level, your identity is not recorded on a centralized system.
+					<p>WebRTC achieves real time communications without needing to install any additional applications or plug-ins. On Togethernet, the information you transmit between browsers is anonymously and freely given by you as a user. There are no logins on Togethernet because on this peer-to-peer level, your identity is not recorded on a centralized system.
 					Furthermore, WebRTC encrypts all data that is sent through it in order to protect users’ communications.</p>
 					<p>If you are feeling confused at this point, we invite you to take a moment to imagine: <br/><br /> 
-					You and a friend are meeting in
-					the street. Your intentions are to share private information with one another, but prior to that happening, you both
+					You and a friend are meeting in the street. Your intentions are to share private information with one another, but prior to that happening, you both
 					require exchanging a secret handshake. The information you share is functionally protected by the mediating act of
 					completing the handshake, whose steps are known only by the two of you. This is akin to the level of privacy enabled by
 					WebRTC’s encryption in peer-to-peer mode.</p>
@@ -167,7 +166,7 @@
 					the chat.</p>
 					<h2>The Role of the Server</h2>
 					<p>While WebRTC is distinctive in that it enables encrypted peer-to-peer connections via browsers, servers are still required in order to facilitate these connections. Think of the server as an impartial mediator.</p>
-					<p>For a connection to be established between you and a peer, information on your respective locations must be exchanged
+					<p>In order to establish a connection between you and a peer, information on your respective locations must be exchanged
 					over the server. The information that is given pertains to your local IP address, which takes place inside your browser
 					and is executed by Javascript and being sent out to what is called the signaling server.<sup><a href="code-of-consent.html#section-6">4</a></sup> Once location data has been
 					sent to the signaling server, it is not retrievable.</p>
@@ -181,28 +180,22 @@
 					enter the room is automatically the editor. Subsequent users who enter the chat can become the editor by selecting the
 					function in the bottom-left corner.<sup><a href="code-of-consent.html#section-6">5</a></sup></p>
 					<p>The editor is armed with the ability to delete a message without necessarily having collective consent; as such, this
-					role is one that requires an abundance of care and trust by peer users. It is encouraged that users communicate with
+					role is one that requires an abundance of care and trust by peer users. We encourage users to communicate with
 					their peers prior to removing messages from the archive. When messages are deleted, a trace is left in the archive that
 					labels the removed message as having been deleted by the user.</p>
 					<p>The <i>Archival Channel</i>’s default database runs on <a href="https://www.postgresql.org/">PostGres</a>, an open source database that users can run on their own, or a
 					third-party server. Messages in the <i>Archival Channel</i> can be downloaded into an HTML page, which gives users the ability
 					to host the archive of their conversation on their own website if desired.</p>
 					<p>It is important to note that data stored on third-party servers might not necessarily adhere to the same consent
-					principles that are outlined in this document. A list of third-party servers and their consent adherence can be found
-					<a href="https://en.gendersec.train.tacticaltech.org/downloads/en/autonomous_and_ethical_hosting_providers.pdf">here</a>.</p>
-					<!-- <a class="button" href="#section-4">Continue</a> <a class="button" href="mailto:support@togethernet.org">Pause and Email
-						Us</a> -->
+					principles that are outlined in this document. You can find a list of third-party servers and their consent adherence <a href="https://en.gendersec.train.tacticaltech.org/downloads/en/autonomous_and_ethical_hosting_providers.pdf">here</a>.</p>
 				</section>
 					<section id="section-4">
 						<hr>
 						<h1>Recap: Adherence to F.R.I.E.S. Model</h1>
-						<p>To understand and place emphasis on how this software adheres to the Planned Parenthood F.R.I.E.S. consent framework,
-						below are Togethernet’s answers to questions posed to developers in the <a href="https://www.andalsotoo.net/wp-content/uploads/2018/10/Building-Consentful-Tech-Zine-SPREADS.pdf">Consentful Tech Zine</a>.</p>
+						<p>To understand and place emphasis on how this software adheres to the Planned Parenthood F.R.I.E.S. consent framework, below are Togethernet’s answers to questions posed to developers in the <a href="https://www.andalsotoo.net/wp-content/uploads/2018/10/Building-Consentful-Tech-Zine-SPREADS.pdf">Consentful Tech Zine</a>.</p>
 
 						<p>Are people <b>Freely</b> giving us their consent to access and store parts of their digital bodies?</p>
-						<p>Yes - this document is intended to arm prospective Togethernet users with an understanding of how their digital bodies
-						are accessed, stored, and protected while using the software. Prospective users are invited to reach out with any
-						questions or concerns in case they are not comfortable with the terms outlined here.</p>
+						<p>Yes - this document is intended to arm prospective Togethernet users with an understanding of how their digital bodies are accessed, stored, and protected while using the software. We invite prospective users to reach out with any questions or concerns in case they are not comfortable with the terms outlined here.</p>
 						<p>Does our system allow for <b>Reversible</b> consent? How easy is it for people to withdraw both their consent and their data?</p>
 						<p>Yes - in order for messages to be archived, collective consent from all parties in the conversation is required. This
 						consent can be revoked at any time by any individual in the conversation. Revoking consent removes users’ data from the
@@ -210,7 +203,7 @@
 						<p>How are we making sure that the consent is <b>Enthusiastic</b>? Is there an option not to use this technology, which means that
 						people use it because they prefer to use it?</p>
 						<p>In order to use Togethernet, it is required to read through and agree to the Code of Consent, which is aimed at clearly
-						outlining the agreements behind the software. We offer this software, and the embedded Code of Consent as an alternative
+						outlining the agreements behind the software. We offer this software, and the embedded Code of Consent, as an alternative
 						to softwares that are rooted in surveillance capitalism. For users whose privacy needs are not met by Togethernet, we
 						invite them to explore alternatives such as <a href="https://www.signal.org/">Signal</a>.</p>
 						<p>How are we fully and clearly <b>Informing</b> people about what they’re consenting to? Is important information about the risks
