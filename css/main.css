@@ -501,8 +501,9 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
-	background: #2A1D64;
-	color: #EDECE9;
+	background: url('../assets/textures/noise_bg.png'), linear-gradient(90deg, #2A1E4D 0%, #3B3A72 100%);
+	background-blend-mode: soft-light;
+	color:#EDECE9;
 	padding: 25px 50px;
 }
 footer .footer-left{
