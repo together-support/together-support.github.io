@@ -637,8 +637,14 @@ main ol li{
 		float:none;
 
 	}
-	.navigation ul, .in-page-navigation ul{
+
+	.navigation.open {
 		width:100vw;
+	}
+	.navigation.open ul, .in-page-navigation ul{
+		display: block;
+		width:80vw;
+		margin: auto;
 	}
 	#left-sticky{
 		position: sticky;
