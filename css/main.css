@@ -315,7 +315,7 @@ h3{
 }
 .navigation li, .in-page-navigation li{
 	border-top:1px solid;
-	padding:20px 0;
+	padding: 25px 0;
 	margin: 0 25px;
 }
 .navigation li a, .in-page-navigation li a{
@@ -327,7 +327,7 @@ h3{
 	font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 37px;
+    line-height: 27px;
     text-align: center;
     letter-spacing: -0.1em;
     font-family: 'Selectric';
