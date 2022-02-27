@@ -259,7 +259,7 @@ h3{
 	top:0;
 	position:fixed;
 	color:#EDECE9;
-	text-align:center;
+	text-align: center;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 17px;
@@ -369,7 +369,7 @@ h3{
 	position: absolute;
 	background: linear-gradient(90deg, #49387B 0%, #404385 100%);
 	width: 80px;
-	height:80px;
+	height: 80px;
 	right:0;
 	text-align: center;
 	top:0;
@@ -378,13 +378,14 @@ h3{
 }
 #mobile-nav-trigger svg{
 	position: relative;
-	top:10px;
+	top: 15px;
 	transition: 0.2s;
 	width: 50px;
-	height:50px;
+	height: 50px;
 }
 #mobile-nav-trigger.open svg{
 	transform: rotate(45deg);
+ 	transform-origin:center;
 }
  .open.navigation{
 	height: 100vh;
