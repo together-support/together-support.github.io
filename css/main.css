@@ -66,13 +66,15 @@ p{
 	margin:0 0 25px 0;
 }
 p.standout{
+	font-family: 'Selectric';
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.1em;
 	border: 1px solid #2A1D64;
-	border-radius: 0px;
-	padding: 25px;
-	background: url('../assets/textures/noise_bg.png'), linear-gradient(90deg, #2A1E4D 0%, #3B3A72 100%);
+	background: url('../assets/textures/noise_bg.png'), linear-gradient(90deg, #eae6f6 0%, #e9e9e9 100%);
 	background-blend-mode: soft-light;
-	color:#EDECE9;
-
+	margin-top: 12px;
+    padding: 45px;
 }
 .page{
 	display: flex;
@@ -182,14 +184,13 @@ h3{
 }
 
 .audio{
-	margin:1em 0;
 	border:1px solid #2A1D64;
-	border-radius:5px;
-	padding:5px 15px;
+	margin-bottom: 30px;
+	padding: 15px 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: url('../assets/textures/noise_bg.png'), linear-gradient(90deg, #2A1E4D 0%, #3B3A72 100%);
+	background: url('../assets/textures/noise_bg.png'), linear-gradient(90deg, #eae6f6 0%, #e9e9e9 100%);
 	background-blend-mode: soft-light;
 }
 .audio audio, p{
@@ -197,8 +198,11 @@ h3{
 	vertical-align: middle;
 }
 .audio p{
-	color: #EDECE9;
-	margin-right: 25px;
+	font-family: 'Selectric';
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.1em;
+	margin: 0 25px 0 0;
 }
 /* INTRO */
 
