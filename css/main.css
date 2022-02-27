@@ -77,6 +77,17 @@ p.standout{
     padding: 45px;
 }
 
+sup{
+	line-height:0; 
+	vertical-align:text-top;
+}
+
+sup a, sup a:link, sup a:hover, sup a:focus, sup a:visited{
+	text-decoration: none;
+	cursor: pointer;
+	padding-bottom: 1px;
+}
+
 .page{
 	display: flex;
 	justify-content: flex-start;
