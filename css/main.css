@@ -658,6 +658,35 @@ main ol li{
 	.in-page-navigation{
 		display: none;
 	}
+
+	/* Button styles */
+
+	a.button, a.button:hover, a.button:link, a.botton:focus, a.button:visited, button, button:hover, button:link, button:focus,  button:visited {
+		display: block;
+		width: 80%;
+		margin: 20px auto;
+		background: none;
+		outline: none;
+		border: 1px solid;
+		font-family: "Selectric";
+		font-size: 20px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: -0.1em;
+		border-radius:60px;
+		padding:20px 30px;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	a.button, button{
+		color: #2A1D64;
+	}
+
+	a.button:hover, button:hover, a.button:focus, button:focus{
+		background:#4F30CA; 
+		color:#EDECE9;
+	}
 	/* FOOTER */
 	footer{
 		flex-direction: column;
