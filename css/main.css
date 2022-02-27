@@ -468,15 +468,18 @@ h3{
  	padding: 0;
 
 }
+.twoCol {
+	display: flex;
+}
 .setting fieldset{
+	margin: 0;
+	padding: 0;
 	border:none;
 }
 .setting{
 	text-align: left;
-	padding:25px 50px;
+	padding:25px 30px;
 	font-size:16px;
-	display: flex;
-	justify-content: space-between;
 	border-bottom:1px solid;
 }
 
@@ -508,11 +511,12 @@ h3{
 .setting label{
 	width: 70px;
 	cursor: pointer;
-	margin-left:25px;
+	margin-left:15px;
 	text-align:left;
 	display: inline-block;
 }
 .setting a{
+	text-decoration: underline;
 	border:none;
 	display: inline-block;
 }
