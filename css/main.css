@@ -138,9 +138,9 @@ hr{
 }
 hr.star-border{
 	background:url("../assets/icons/divider.svg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position:center center;
+	background-size: contain;
+	background-repeat: repeat-x;
+	background-position:left center;
 	height: 30px;
 }
 /*Link & Heading styles */
