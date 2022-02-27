@@ -59,7 +59,7 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 36px;
 	text-rendering: geometricPrecision; 
 }
 p{
@@ -76,6 +76,7 @@ p.standout{
 	margin-top: 12px;
     padding: 45px;
 }
+
 .page{
 	display: flex;
 	justify-content: flex-start;
@@ -106,7 +107,7 @@ body.contrast .in-page-navigation li a.on:before{
 }
 /* Button styles */
 
-a.button, button{
+a.button, a.button:hover, a.button:link, a.botton:focus, a.button:visited, button, button:hover, button:link, button:focus,  button:visited {
 	display: inline-block;
 	width: 40%;
 	margin: 20px auto;
@@ -118,11 +119,14 @@ a.button, button{
 	line-height: 25px;
 	text-align: center;
 	letter-spacing: -0.1em;
-	color: #2A1D64;
 	border-radius:60px;
 	padding:20px 30px;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+a.button, button{
+	color: #2A1D64;
 }
 
 a.button:hover, button:hover{
@@ -146,9 +150,28 @@ hr.star-border{
 	height: 30px;
 }
 /*Link & Heading styles */
-a,a:link{
-	color:inherit;
+
+a, a:link, a:hover, a:focus, a:visited{
+	text-decoration: none;
+	cursor: pointer;
+	padding-bottom: 1.5px;
 }
+
+a, a:visited {
+	color:#2A1D64;
+	border-bottom: 1px solid #2A1D64;
+}
+
+a:hover {
+	color:#4F30CA;
+	border-bottom: 1px solid #4F30CA;
+}
+
+a:focus{
+	color:#2A1D64;
+	border-bottom: 2px solid #2A1D64;
+}
+
 li{
 	list-style:  none;
 }
@@ -254,14 +277,15 @@ h3{
 /*.global-nav{
 	font-size:16px;
 }*/
-/*.navigation .global-nav  li{
-	display: inline-block;
+.navigation .global-nav  li{
+	/* display: inline-block;
 	border: none;
-	padding:0;
+	padding:0; */
 }
-.navigation .global-nav  li a{
+.navigation .global-nav  li a, .navigation .global-nav  li a:hover, .navigation .global-nav  li a:visited, .navigation .global-nav  li a:focus, .navigation .global-nav  li a:link, .setting a, .setting a:hover, .setting a:visited, .setting a:focus, .setting a:link{
 	border:none;
-}*/
+	color:#EDECE9;
+}
 .navigation{
 	top:0;
 	position:fixed;
@@ -296,6 +320,7 @@ h3{
 }
 .navigation li a, .in-page-navigation li a{
 	text-decoration: none;
+	border: none;
 }
 
 .in-page-navigation{
@@ -312,6 +337,7 @@ h3{
 	height:100vh;
 	padding-top:5em;
 }
+
 .in-page-navigation li a.on:before{
 	content: ' ';
     background: url(../assets/icons/bullet.svg);
@@ -323,6 +349,7 @@ h3{
     display: inline-block;
     vertical-align: middle;
     position: relative;
+	padding: 0;
     bottom: 3px;
 }
 .navigation .global-nav{
@@ -534,7 +561,9 @@ footer .footer-right p{
 footer ul li{
 	display: inline-block;
 	margin-left: 50px;
-
+}
+footer ul li a, footer ul li a:focus, footer ul li a:link, footer ul li a:hover, footer ul li a:visited{
+	border: none;
 }
 footer ul{
 	text-align:right;
