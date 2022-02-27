@@ -592,9 +592,10 @@ footer input{
 /* SECTIONS */
 main{
 	width: calc(70% - 100px);
-	display:inline-block;
-	float:right;
-	overflow: hidden;
+	max-width: 780px;
+	display:block;
+	margin: auto;
+	/* overflow: hidden; */
 	padding:50px;
 }
 main img{
@@ -657,7 +658,7 @@ main ol li{
 
 	}
 	.intro img, .intro p {
-    	width: 50vw;
+    	width: 66vw;
 	}
 	.intro{
 		height: calc(100vh - 50px);
