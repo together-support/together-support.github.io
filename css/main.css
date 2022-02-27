@@ -566,13 +566,22 @@ main p{
  font-family:'Newsreader';
 }
 
+main ul {
+	padding: 0;
+}
+
 main ul li{
-  list-style-image: url('../assets/icons/flower.svg');
+  margin: 0;
+  padding: 8px 0px 8px 40px;
+  list-style: none;
+  background-image: url('../assets/icons/flower.svg');
+  background-repeat: no-repeat;
+  background-position: 0 11px;
+  background-size: 22px;
 }
 main ol li{
   list-style-type:decimal;
 }
-
 
 /* MOBILE */
 
