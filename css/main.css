@@ -94,28 +94,27 @@ sup a, sup a:link, sup a:hover, sup a:focus, sup a:visited{
 	align-items: stretch;
 }
 /* HIGH CONTRAST MODE */
+
 body.contrast{
 	background: black;
-	
+}
 
-}
-body.contrast #left-sticky, body.contrast .navigation, body.contrast footer{
+body.contrast .intro,
+body.contrast .navigation,
+body.contrast footer{
 	filter: grayscale(100%) contrast(200%);
 }
-body.contrast #left-sticky{
-	color:#EDECE9;
+
+body.contrast main,
+body.contrast .in-page-navigation,
+body.contrast #mobile-nav-trigger{
+	filter: grayscale(100%) invert(200%) contrast(200%);
 }
-body.contrast main{
-	color:#EDECE9;
-	filter: grayscale(100%) contrast(200%);
+
+body.contrast main img{
+	filter: invert(200%) contrast(100%);
 }
-body.contrast .intro{
-	color:#EDECE9;
-	filter: grayscale(100%) contrast(200%);
-}
-body.contrast .in-page-navigation li a.on:before{
-	filter:invert(200%);
-}
+
 /* Button styles */
 
 a.button, a.button:hover, a.button:link, a.botton:focus, a.button:visited, button, button:hover, button:link, button:focus,  button:visited {
