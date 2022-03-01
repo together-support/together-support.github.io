@@ -2,52 +2,76 @@
 
 /*Autopia-Bold-Italic*/
 @font-face {
-    font-family: 'Autopia-Bold-Italic';
+    font-family: 'Autopia';
     src: url('../assets/fonts/autopia/Autopia-Bold-Italic/Autopia-Bold-Italic.eot'); /* IE 9 Compatibility Mode */
     src: url('../assets/fonts/autopia/Autopia-Bold-Italic/Autopia-Bold-Italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
          url('../assets/fonts/autopia/Autopia-Bold-Italic/Autopia-Bold-Italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
          url('../assets/fonts/autopia/Autopia-Bold-Italic/Autopia-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../assets/fonts/autopia/Autopia-Bold-Italic/Autopia-Bold-Italic.svg#Autopia-Bold-Italic') format('svg'); /* Chrome < 4, Legacy iOS */
+	font-weight: bold;
+	font-style: italic;	  
     }
 
 /*Autopia-Bold*/
 @font-face {
-    font-family: 'Autopia-Bold';
+    font-family: 'Autopia';
     src: url('../assets/fonts/autopia/Autopia-Bold/Autopia-Bold/Autopia-Bold.eot'); /* IE 9 Compatibility Mode */
     src: url('../assets/fonts/autopia/Autopia-Bold/Autopia-Bold/Autopia-Bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
          url('../assets/fonts/autopia/Autopia-Bold/Autopia-Bold/Autopia-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
          url('../assets/fonts/autopia/Autopia-Bold/Autopia-Bold/Autopia-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../assets/fonts/autopia/Autopia-Bold/Autopia-Bold/Autopia-Bold.svg#Autopia-Bold') format('svg'); /* Chrome < 4, Legacy iOS */
+	font-weight: normal;
+	font-style: bold;	 
     }
 
 /*Autopia-Italic*/
 @font-face {
-    font-family: 'Autopia-Italic';
+    font-family: 'Autopia';
     src: url('../assets/fonts/autopia/Autopia-Italic/Autopia-Italic.eot'); /* IE 9 Compatibility Mode */
     src: url('../assets/fonts/autopia/Autopia-Italic/Autopia-Italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
          url('../assets/fonts/autopia/Autopia-Italic/Autopia-Italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
          url('../assets/fonts/autopia/Autopia-Italic/Autopia-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../assets/fonts/autopia/Autopia-Italic/Autopia-Italic.svg#Autopia-Italic') format('svg'); /* Chrome < 4, Legacy iOS */
+	font-weight: normal;
+	font-style: italic;	 
     }
 
 /*Autopia-Regular*/
 @font-face {
-    font-family: 'Autopia-Regular';
+    font-family: 'Autopia';
     src: url('../assets/fonts/autopia/Autopia-Regular/Autopia-Regular.eot'); /* IE 9 Compatibility Mode */
     src: url('../assets/fonts/autopia/Autopia-Regular/Autopia-Regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
          url('../assets/fonts/autopia/Autopia-Regular/Autopia-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../assets/fonts/autopia/Autopia-Regular/Autopia-Regular.svg#Autopia-Regular') format('svg'); /* Chrome < 4, Legacy iOS */
+	font-weight: normal;
+	font-style: normal;	 
     }
 /*SELECTRIC*/
 @font-face {
     font-family: 'Selectric';
     src: url('../assets/fonts/selectric/OTF/SelectricMono.otf') format('embedded-opentype'), 
          url('../assets/fonts/selectric/WOFF/SelectricMono.woff') format('woff'); 
+	font-weight: normal;
+	font-style: normal;	 
     }
 /*NEWSREADER*/
 @font-face {
     font-family: 'Newsreader';
-    src: url('../assets/fonts/newsreader/Newsreader-VariableFont_opsz,wght.ttf') format('truetype'); 
+    src: url('../assets/fonts/newsreader/Newsreader-VariableFont_opsz,wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+    }
+@font-face {
+    font-family: 'Newsreader';
+    src: url('../assets/fonts/newsreader/static/Newsreader/Newsreader-SemiBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+    }
+@font-face {
+    font-family: 'Newsreader';
+    src: url('../assets/fonts/newsreader/Newsreader-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
     }
 /**/
 body{
@@ -55,7 +79,7 @@ body{
 	/* or 113% */
 	background: #EDECE9;
 	color:#2A1D64;
-	font-family: Newsreader;
+	font-family: 'Newsreader';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -188,7 +212,7 @@ li{
 }
 
 h1,h2,h4,h5,h6{
-	font-family: "Autopia-Regular";
+	font-family: "Autopia";
 	font-weight:normal;
 	font-style: normal;
 }
@@ -257,7 +281,7 @@ h3{
 .intro img,.intro p{
 	width: 35vw;
 	display:block;
-	font-family:"Autopia-Regular";
+	font-family:"Autopia";
 	margin: 0 auto;
 }
 .intro .inner p{
