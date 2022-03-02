@@ -107,7 +107,9 @@ p.standout{
 	margin-top: 12px;
     padding: 45px;
 }
-
+i{
+	letter-spacing: 0;
+}
 sup{
 	line-height:0; 
 	vertical-align:text-top;
