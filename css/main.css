@@ -593,7 +593,7 @@ footer .footer-right{
 	width: 40%;
 	position: relative;
 	text-align:right;
-	 align-self:stretch;
+	align-self:stretch;
 }
 footer .footer-right p{
 	position: absolute;
@@ -606,12 +606,14 @@ footer ul li{
 	display: inline-block;
 	margin-left: 50px;
 }
+footer img:hover{
+	filter: invert(71%) sepia(35%) saturate(547%) hue-rotate(200deg) brightness(200%) contrast(104%);
+}
 footer ul li a, footer ul li a:focus, footer ul li a:link, footer ul li a:hover, footer ul li a:visited{
 	border: none;
 }
 footer ul{
 	text-align:right;
-
 }
 footer button{
 	border: 1px solid #EDECE9;
