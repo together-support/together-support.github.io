@@ -190,7 +190,9 @@ hr.star-border{
 	background-size: contain;
 	background-repeat: repeat-x;
 	background-position:left center;
-	height: 30px;
+	height: 34px;
+	margin: 0;
+	padding: 0;
 }
 /*Link & Heading styles */
 
@@ -374,7 +376,7 @@ h3{
     text-align: center;
     letter-spacing: -0.1em;
     font-family: 'Selectric';
-    padding: 0;
+    padding: 70px 0;
 /*    background: url('../assets/textures/noise_bg.png'), linear-gradient(90deg, #2A1E4D 0%, #3B3A72 100%);
 	background-blend-mode: soft-light;*/
 	height:100vh;
@@ -673,9 +675,9 @@ main{
 	width: calc(70% - 100px);
 	max-width: 780px;
 	display:block;
-	margin: auto;
 	/* overflow: hidden; */
-	padding:50px;
+	padding:0 50px;
+	margin: 110px auto;
 }
 main img{
 	width: 100%;
@@ -710,17 +712,12 @@ main ol li{
 	.page{
 		display: block;
 		position: relative;
-
-	}
-	main{
-		padding: 25px;
 	}
 	/* NAVIGATION */
 	#left-sticky, main{
 		display: block;
 		width: auto;
 		float:none;
-
 	}
 	.navigation.open {
 		width:100vw;
@@ -735,7 +732,6 @@ main ol li{
 		display: block;
 		z-index: 9;
 		top:calc(-100vh + 50px);
-
 	}
 	.intro img, .intro p {
     	width: 66vw;
