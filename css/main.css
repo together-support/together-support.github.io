@@ -478,12 +478,47 @@ h3{
 	margin:0;
 	font-size:17px;
 	border-bottom: 1px solid;
+	border-left: 1px transparent;
+	border-right: 1px transparent;
 }
-.in-page-navigation li:first-child, .open.navigation li:first-child{
+.open.navigation li:hover{
+	background-color: #4F30CA;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+.in-page-navigation li:first-child{
 	border:0;
 }
+.open.navigation li:first-child{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border: 1px solid transparent;
+}
+.open.navigation li:first-child:hover{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-top: 1px solid;
+}
  .open.navigation li:last-child{
-	border:none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border: 1px solid transparent;
+ }
+ .open.navigation li:last-child:hover{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
 }
  .open.navigation .global-nav{
 	margin-top:5em;
