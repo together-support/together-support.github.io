@@ -787,8 +787,7 @@ address{
 		border:1px solid #2A1D64;
 		margin: 30px auto;
 		padding: 25px;
-		background: url('../assets/textures/noise_bg.png'), linear-gradient(90deg, #eae6f6 0%, #e9e9e9 100%);
-		background-blend-mode: soft-light;
+		background: linear-gradient(90deg, #eae6f6 0%, #e9e9e9 100%);
 	}
 	.audio p{
 		font-family: 'Selectric';
