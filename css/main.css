@@ -197,6 +197,9 @@ a.button:hover, button:hover{
 	color:#EDECE9;
 }
 
+a.resumeBtn{
+}
+
 /*HR styles */
 hr{
 	background:#2A1D64;
