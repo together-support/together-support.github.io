@@ -281,13 +281,14 @@ h3{
 	margin: 28px 0 28px 0;
 	margin: 2.8rem 0 2.8rem 0;
 }
-h4{
+h3.newsreader{
 	font-family: "Newsreader";
 	font-weight: bold;
 	font-size: 26px;
 	font-size: 2.6rem;
 	line-height: 34px;
 	line-height: 3.4rem;
+	letter-spacing: 0;
 }
 /* ACCESSIBILITY */
 .screenreader-text{
