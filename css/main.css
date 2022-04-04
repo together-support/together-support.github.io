@@ -295,15 +295,18 @@ h4{
 	height:0;
 }
 .audio{
+	display: none;
 	width: calc(100%-25px);
 	width: calc(100%-2.5rem);
 	margin: 20px 0;
 	margin: 2rem 0;
 	padding: 15px 20px;
 	padding: 1.5rem 2rem;
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.audio.show{
+	display: flex;
 }
 .audio audio, p{
 	display: inline-block;
@@ -818,13 +821,16 @@ address{
 		padding: 0;
 	}
 	.audio{
-		display: block;
+		display: none;
 		margin: 30px auto;
 		margin: 3rem auto;
 		padding: 25px;
 		padding: 2.5rem;
 		border:1px solid #2A1D64;
 		background: linear-gradient(90deg, #eae6f6 0%, #e9e9e9 100%);
+	}
+	.audio.show{
+		display: block;
 	}
 	.audio p{
 		font-family: 'Selectric';

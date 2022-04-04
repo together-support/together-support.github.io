@@ -93,13 +93,36 @@ document.querySelector("#high-contrast-on").addEventListener('change', () => {
 
   })
 
+document.querySelector("#show-audio-off").addEventListener('change', () => {
+   localStorage.setItem('showAudio', "false");
+   let audios = document.querySelectorAll(".audio");
+   for (var i = audios.length - 1; i >= 0; i--) {
+		audios[i].classList.remove("show")
+	}
+
+  })
+document.querySelector("#show-audio-on").addEventListener('change', () => {
+    localStorage.setItem('showAudio', "true");
+    let audios = document.querySelectorAll(".audio");
+    for (var i = audios.length - 1; i >= 0; i--) {
+		audios[i].classList.add("show")
+	}
+  })
+
 
 
 
 document.addEventListener("DOMContentLoaded", function(){
 	const contrast = localStorage.getItem('contrast');
+	const showAudio = localStorage.getItem('showAudio')
 	if(contrast == "true"){
 		document.body.classList.add("contrast");
 		document.getElementById("high-contrast-on").checked = true;
+	}
+	if(showAudio == "true"){
+		let audios = document.querySelectorAll(".audio");
+		for (var i = audios.length - 1; i >= 0; i--) {
+			audios[i].classList.add("show")
+		}
 	}
 });
