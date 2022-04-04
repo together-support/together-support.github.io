@@ -124,5 +124,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		for (var i = audios.length - 1; i >= 0; i--) {
 			audios[i].classList.add("show")
 		}
+		document.getElementById("show-audio-on").checked = true;
 	}
 });
