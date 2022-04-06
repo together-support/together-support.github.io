@@ -328,9 +328,9 @@ h3.newsreader{
 	position: relative;
 	width: 30%;
 }
-#mobile-nav-trigger{
+/* #mobile-nav-trigger{
 	display: none;
-}
+} */
 .intro img,.intro p{
 	width: 35vw;
 	display: block;
