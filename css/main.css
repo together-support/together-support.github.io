@@ -526,7 +526,6 @@ h3.newsreader{
 	margin: 0;
 	font-size: 17px;
 	font-size: 1.7rem;
-	border-bottom: 1px solid;
 	border-left: 1px transparent;
 	border-right: 1px transparent;
 }
@@ -559,7 +558,10 @@ h3.newsreader{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	border: 1px solid transparent;
+	border-top: 1px solid;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
  }
  .open.navigation li:last-child:hover{
     box-sizing: border-box;
