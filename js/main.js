@@ -14,7 +14,7 @@ function isScrolledIntoView(element) {
   console.log(element.id)
   console.log(rect.top, rect.top < 0)
   return (
-    rect.top < 0
+    rect.top < w.innerHeight/2
 
   );
 }
