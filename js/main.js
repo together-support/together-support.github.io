@@ -65,8 +65,10 @@ document.getElementById("mobile-nav-trigger").addEventListener("keyup",function(
 document.querySelector("#mobile-nav-trigger").addEventListener("click",function(){
 	if(document.querySelector(".navigation").classList.contains("open")){
 		document.querySelector(".navigation").classList.remove("open");
+		document.querySelector("#mobile-nav-trigger").setAttribute('aria-expanded', 'false');
 	}else{
 		document.querySelector(".navigation").classList.add("open")
+		document.querySelector("#mobile-nav-trigger").setAttribute('aria-expanded', 'true');
 	}
 })
 
@@ -75,8 +77,10 @@ document.querySelector("#mobile-nav-trigger").addEventListener("keyup",function(
 	if(event.keyCode == enterKeyCode || event.keyCode == spaceKeyCode) {
 		if(document.querySelector(".navigation").classList.contains("open")){
 			document.querySelector(".navigation").classList.remove("open");
+			document.querySelector("#mobile-nav-trigger").setAttribute('aria-expanded', 'false');
 		}else{
 			document.querySelector(".navigation").classList.add("open")
+			document.querySelector("#mobile-nav-trigger").setAttribute('aria-expanded', 'true');
 		}
 	}
 })
