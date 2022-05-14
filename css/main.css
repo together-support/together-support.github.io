@@ -387,7 +387,7 @@ h3.newsreader{
 	min-width: 8rem;
 	height: 80px;
 	height: 8rem;
-    overflow: hidden;
+    overflow: scroll;
 	font-family: 'Selectric';
 	font-style: normal;
 	font-weight: normal;
@@ -593,8 +593,6 @@ h3.newsreader{
 .setting-toggles{
  	background:url('../assets/textures/noise_bg.png'), linear-gradient(90deg, #2A1E4D 0%, #3B3A72 100%);
  	background-blend-mode: soft-light;
- 	position: absolute;
- 	bottom:0;
  	width: 100%;
  	padding: 0;
 }
