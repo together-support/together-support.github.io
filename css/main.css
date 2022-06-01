@@ -817,9 +817,12 @@ address{
 		height: calc(100vh - 5rem);
 		overflow-y: hidden;
 	}
-	
 	.in-page-navigation{
 		display: none;
+	}
+	p.standout {
+		padding: 25px;
+		padding: 2.5rem;
 	}
 
 	/* Button styles */
